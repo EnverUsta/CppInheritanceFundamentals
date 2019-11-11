@@ -16,7 +16,7 @@ public:
 };
 
 
-//Definition of banana class
+//Definition of Banana class
 class Banana : public Fruit {
 
 public:
@@ -26,6 +26,7 @@ public:
 
 };
 
+//Definition of Apple class
 class Apple : public Fruit {
 private:
 	double m_fiber;
