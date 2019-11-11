@@ -6,7 +6,7 @@ private:
 	std::string m_name;
 	std::string m_color;
 public:
-	Fruit(const std::string name = "", const std::string color = "")
+	Fruit(const std::string& name = "", const std::string& color = "")
 		:m_name(name),
 		m_color(color)
 	{}
@@ -20,7 +20,7 @@ public:
 class Banana : public Fruit {
 
 public:
-	Banana(const std::string name = "", const std::string color = "Yellow")
+	Banana(const std::string& name = "", const std::string& color = "Yellow")
 		:Fruit(name, color)
 	{}
 
@@ -30,7 +30,7 @@ class Apple : public Fruit {
 private:
 	double m_fiber;
 public:
-	Apple(std::string name = "", std::string color = "red", double fiber = 0.0)
+	Apple(std::string& name = "", std::string& color = "red", double fiber = 0.0)
 		:Fruit(name, color),
 		m_fiber(fiber)
 	{}
