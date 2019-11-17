@@ -36,6 +36,7 @@ public:
 	void addGold(int gold){m_gold += gold;}
 };
 
+
 class Player: public Creature{
 private:
 	int m_level;
@@ -64,6 +65,7 @@ public:
 		SLIME,
 		MAX_TYPES
 	}
+	
 }
 
 
