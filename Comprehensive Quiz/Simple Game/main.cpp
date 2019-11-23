@@ -65,8 +65,30 @@ public:
 		SLIME,
 		MAX_TYPES
 	}
+	struct MonsterData{
+		std::string name;
+		char symbol;
+		int health;
+		int damage;
+		int gold;
+	};
+
+	static MonsterData monsterData[Monster::MAX_TYPES];
+
+	Monster(Monster::Type t){}
 	
 }
+
+
+
+Monster::MonsterData Monster::monsterData[Monster::MAX_TYPES]
+{
+	{"dragon",'D',20, 4, 100},
+	{"orc", 'o', 4, 2, 25},
+	{"slime", 's', 1, 1, 10}
+
+};
+
 
 
 
